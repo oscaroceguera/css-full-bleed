@@ -1,0 +1,19 @@
+.wrapper {
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: 1fr min(60ch, calc(100% - 64px)) 1fr;
+  grid-column-gap: 32px;
+}
+
+p {
+  border: 1px solid;
+}
+
+.wrapper > * {
+  grid-column: 2;
+}
+
+.full-bleed {
+  width: 100%;
+  grid-column: 1 / 4;
+}
